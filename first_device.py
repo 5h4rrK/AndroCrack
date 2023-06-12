@@ -7,7 +7,7 @@ def crack_The_Pattern(signature, meta, salt, cost_N = 2**14, block_size = 8, par
     hash_val = meta
     mod = 0
     hash_val = scrypt.hash(hash_val, salt, cost_N, block_size , parallelism)
-    pass_combinations = [''.join(_) for _ in itertools.product('985431', repeat=5)]
+    pass_combinations = [''.join(_) for _ in itertools.product('987654310', repeat=5)]
     for i in range(0,len(pass_combinations)):
         pattern = pass_combinations[i]
         hash_val = meta
